@@ -1,0 +1,219 @@
+<!DOCTYPE html> 
+<html > 
+  <head> 
+    <style type="text/css"> 
+    body {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+    }
+    #home, #about, #contact { 
+      float: left;
+      height:380px; 
+      width:340px; 
+      position:absolute; 
+      z-index:10; 
+      display:none; 
+      background-color: #fff; 
+      border:5px solid #cccccc; 
+      border-radius:10px;
+      margin-left: 6%;
+      overflow-y: auto;
+      overflow-x: hidden;
+    } 
+    #home:target{ 
+      display:block; 
+    } 
+    #about:target{ 
+      display:block; 
+      opacity:2; 
+    }
+    #contact:target{ 
+      display:block; 
+      opacity:2; 
+    }
+    .menu_div {
+      width: 6%;
+      float: left;
+      position:absolute;
+      overflow: auto;
+      height: 100%;
+      overflow-x: hidden;
+    }
+    .left_div {
+    }
+    #cont { 
+      position:absolute; 
+      top:0; 
+      left:6%; 
+      width:94%;  
+      height: auto;
+      overflow: auto;
+      bottom: 0;
+    }
+    .menu_div_old {
+      width: 5%;
+      float: left;
+      position:absolute;
+    }
+    #cont_old { 
+      position:absolute; 
+      top:0; 
+      left:5%; 
+      z-index:5; 
+      width:95%;  
+      overflow-y: auto;
+      height: auto;
+    }
+    </style> 
+  </head> 
+  <body> 
+    <div> 
+      <div class='left_div'>
+        <div class='menu_div'>
+        <ul class="nav nav-pills nav-stacked" role="tablist">
+          <li role="presentation"><a href="#home">Home</a></li>
+          <li role="presentation"><a  href="#about">About</a></li>
+          <li role="presentation"><a href="#contact">Contact</a></li>
+          <li role="presentation"><a href="#home">Home</a></li>
+          <li role="presentation"><a  href="#about">About</a></li>
+          <li role="presentation"><a href="#contact">Contact</a></li>
+          <li role="presentation"><a href="#home">Home</a></li>
+          <li role="presentation"><a  href="#about">About</a></li>
+          <li role="presentation"><a href="#contact">Contact</a></li>
+          <li role="presentation"><a href="#home">Home</a></li>
+          <li role="presentation"><a  href="#about">About</a></li>
+          <li role="presentation"><a href="#contact">Contact</a></li>
+          <li role="presentation"><a href="#home">Home</a></li>
+          <li role="presentation"><a  href="#about">About</a></li>
+          <li role="presentation"><a href="#contact">Contact</a></li>
+          <li role="presentation"><a href="#home">Home</a></li>
+          <li role="presentation"><a  href="#about">About</a></li>
+          <li role="presentation"><a href="#contact">Contact</a></li>
+          <li role="presentation"><a href="#home">Home</a></li>
+          <li role="presentation"><a  href="#about">About</a></li>
+          <li role="presentation"><a href="#contact">Contact</a></li>
+          <li role="presentation"><a href="#home">Home</a></li>
+          <li role="presentation"><a  href="#about">About</a></li>
+          <li role="presentation"><a href="#contact">Contact1</a></li>
+        </ul>
+        </div>
+      </div>
+      <div id="home"> 
+        <ul class="nav nav-pills nav-stacked" role="tablist">
+          <li role="presentation"><a href="#">HomeSub1</a></li>
+          <li role="presentation"><a  href="#">HomeSub Menu 1</a></li>
+          <li role="presentation"><a href="#">HomeSub Menu 2</a></li>
+          <li role="presentation"><a href="#">HomeSub Menu 3</a></li>
+          <li role="presentation"><a href="#">HomeSub1</a></li>
+          <li role="presentation"><a  href="#">HomeSub Menu 1</a></li>
+          <li role="presentation"><a href="#">HomeSub Menu 2</a></li>
+          <li role="presentation"><a href="#">HomeSub Menu 3</a></li>
+          <li role="presentation"><a href="#">HomeSub1</a></li>
+          <li role="presentation"><a  href="#">HomeSub Menu 1</a></li>
+          <li role="presentation"><a href="#">HomeSub Menu 2</a></li>
+          <li role="presentation"><a href="#">HomeSub Menu 3</a></li>
+          <li role="presentation"><a href="#">HomeSub1</a></li>
+          <li role="presentation"><a  href="#">HomeSub Menu 1</a></li>
+          <li role="presentation"><a href="#">HomeSub Menu 2</a></li>
+          <li role="presentation"><a href="#">HomeSub Menu 3</a></li>
+          <li role="presentation"><a href="#">HomeSub1</a></li>
+          <li role="presentation"><a  href="#">HomeSub Menu 1</a></li>
+          <li role="presentation"><a href="#">HomeSub Menu 2</a></li>
+          <li role="presentation"><a href="#">HomeSub Menu 3</a></li>
+          <li role="presentation"><a href="#">HomeSub1</a></li>
+          <li role="presentation"><a  href="#">HomeSub Menu 1</a></li>
+          <li role="presentation"><a href="#">HomeSub Menu 2</a></li>
+          <li role="presentation"><a href="#">HomeSub Menu 3</a></li>
+        </ul>
+      </div>
+      <div id="about"> 
+        <ul class="nav nav-pills nav-stacked" role="tablist">
+          <li role="presentation"><a href="#">AboutSub1</a></li>
+          <li role="presentation"><a  href="#">AboutSub Menu 1</a></li>
+          <li role="presentation"><a href="#">AboutSub Menu 2</a></li>
+          <li role="presentation"><a href="#">AboutSub Menu 3</a></li>
+        </ul>
+      </div>
+      <div id="contact"> 
+        <ul class="nav nav-pills nav-stacked" role="tablist">
+          <li role="presentation"><a href="#">ContactSub1</a></li>
+          <li role="presentation"><a  href="#">ContactSub Menu 1</a></li>
+          <li role="presentation"><a href="#">ContactSub Menu 2</a></li>
+          <li role="presentation"><a href="#">ContactSub Menu 3</a></li>
+        </ul>
+      </div>
+      <!--<div id="cover" > aaa </div>-->
+      <div id='cont'>
+      <div>
+        Full screen Overlay using CSS only
+Sometimes you need your entire browser window with a black tint in the background and make a popup at the center of the screen. Normally this technique is used for displaying a login window without moving from existing page or displaying a video, when a user clicks on a link or button in a web page
+The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.
+Full screen Overlay using CSS only
+Sometimes you need your entire browser window with a black tint in the background and make a popup at the center of the screen. Normally this technique is used for displaying a login window without moving from existing page or displaying a video, when a user clicks on a link or button in a web page
+The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.
+Full screen Overlay using CSS only
+Sometimes you need your entire browser window with a black tint in the background and make a popup at the center of the screen. Normally this technique is used for displaying a login window without moving from existing page or displaying a video, when a user clicks on a link or button in a web page
+The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.
+Full screen Overlay using CSS only
+Sometimes you need your entire browser window with a black tint in the background and make a popup at the center of the screen. Normally this technique is used for displaying a login window without moving from existing page or displaying a video, when a user clicks on a link or button in a web page
+The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.
+Full screen Overlay using CSS only
+Sometimes you need your entire browser window with a black tint in the background and make a popup at the center of the screen. Normally this technique is used for displaying a login window without moving from existing page or displaying a video, when a user clicks on a link or button in a web page
+The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.
+Full screen Overlay using CSS only
+Sometimes you need your entire browser window with a black tint in the background and make a popup at the center of the screen. Normally this technique is used for displaying a login window without moving from existing page or displaying a video, when a user clicks on a link or button in a web page
+The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.
+Full screen Overlay using CSS only
+Sometimes you need your entire browser window with a black tint in the background and make a popup at the center of the screen. Normally this technique is used for displaying a login window without moving from existing page or displaying a video, when a user clicks on a link or button in a web page
+The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.
+Full screen Overlay using CSS only
+Sometimes you need your entire browser window with a black tint in the background and make a popup at the center of the screen. Normally this technique is used for displaying a login window without moving from existing page or displaying a video, when a user clicks on a link or button in a web page
+The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.
+Full screen Overlay using CSS only
+Sometimes you need your entire browser window with a black tint in the background and make a popup at the center of the screen. Normally this technique is used for displaying a login window without moving from existing page or displaying a video, when a user clicks on a link or button in a web page
+The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.
+Full screen Overlay using CSS only
+Sometimes you need your entire browser window with a black tint in the background and make a popup at the center of the screen. Normally this technique is used for displaying a login window without moving from existing page or displaying a video, when a user clicks on a link or button in a web page
+The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.
+Full screen Overlay using CSS only
+Sometimes you need your entire browser window with a black tint in the background and make a popup at the center of the screen. Normally this technique is used for displaying a login window without moving from existing page or displaying a video, when a user clicks on a link or button in a web page
+The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.
+Full screen Overlay using CSS only
+Sometimes you need your entire browser window with a black tint in the background and make a popup at the center of the screen. Normally this technique is used for displaying a login window without moving from existing page or displaying a video, when a user clicks on a link or button in a web page
+The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.
+Full screen Overlay using CSS only
+Sometimes you need your entire browser window with a black tint in the background and make a popup at the center of the screen. Normally this technique is used for displaying a login window without moving from existing page or displaying a video, when a user clicks on a link or button in a web page
+The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.
+Full screen Overlay using CSS only
+Sometimes you need your entire browser window with a black tint in the background and make a popup at the center of the screen. Normally this technique is used for displaying a login window without moving from existing page or displaying a video, when a user clicks on a link or button in a web page
+The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.
+Full screen Overlay using CSS only
+Sometimes you need your entire browser window with a black tint in the background and make a popup at the center of the screen. Normally this technique is used for displaying a login window without moving from existing page or displaying a video, when a user clicks on a link or button in a web page
+The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.
+Full screen Overlay using CSS only
+Sometimes you need your entire browser window with a black tint in the background and make a popup at the center of the screen. Normally this technique is used for displaying a login window without moving from existing page or displaying a video, when a user clicks on a link or button in a web page
+The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.
+Full screen Overlay using CSS only
+Sometimes you need your entire browser window with a black tint in the background and make a popup at the center of the screen. Normally this technique is used for displaying a login window without moving from existing page or displaying a video, when a user clicks on a link or button in a web page
+The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.
+Full screen Overlay using CSS only
+Sometimes you need your entire browser window with a black tint in the background and make a popup at the center of the screen. Normally this technique is used for displaying a login window without moving from existing page or displaying a video, when a user clicks on a link or button in a web page
+The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.
+Full screen Overlay using CSS only
+Sometimes you need your entire browser window with a black tint in the background and make a popup at the center of the screen. Normally this technique is used for displaying a login window without moving from existing page or displaying a video, when a user clicks on a link or button in a web page
+The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.
+Full screen Overlay using CSS only
+Sometimes you need your entire browser window with a black tint in the background and make a popup at the center of the screen. Normally this technique is used for displaying a login window without moving from existing page or displaying a video, when a user clicks on a link or button in a web page
+The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.
+Full screen Overlay using CSS only
+Sometimes you need your entire browser window with a black tint in the background and make a popup at the center of the screen. Normally this technique is used for displaying a login window without moving from existing page or displaying a video, when a user clicks on a link or button in a web page
+The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.The popup screen is a Login screen (its an image) and at the right above of the window there is a closing button also. The login window is not a separate window of the web browser that is opened but rather a div that overlays the existing web page. The overlaying div is a transparent covers to your page data and lets the user knows that they can get back to the parent page by closing the popup window that is on top right.
+</div>
+      </div>
+      </div>
+  </body>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>  
+</html>
